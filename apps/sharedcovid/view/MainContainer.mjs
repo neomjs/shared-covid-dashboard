@@ -1,6 +1,14 @@
-import {default as Component}    from '../../../node_modules/neo.mjs/src/component/Base.mjs';
-import {default as TabContainer} from '../../../node_modules/neo.mjs/src/tab/Container.mjs';
-import Viewport                  from '../../../node_modules/neo.mjs/src/container/Viewport.mjs';
+import AttributionComponent           from './AttributionComponent.mjs';
+import FooterContainer                from './FooterContainer.mjs';
+import GalleryContainer               from './GalleryContainer.mjs';
+import HeaderContainer                from './HeaderContainer.mjs';
+import HelixContainer                 from './HelixContainer.mjs';
+import MainContainerController        from './MainContainerController.mjs';
+import {default as MapboxGlContainer} from './mapboxGl/Container.mjs';
+import {default as TabContainer}      from '../../../node_modules/neo.mjs/src/tab/Container.mjs';
+import TableContainer                 from './TableContainer.mjs';
+import Viewport                       from '../../../node_modules/neo.mjs/src/container/Viewport.mjs';
+import WorldMapContainer              from './WorldMapContainer.mjs';
 
 /**
  * @class SharedCovid.view.MainContainer
@@ -8,38 +16,82 @@ import Viewport                  from '../../../node_modules/neo.mjs/src/contain
  */
 class MainContainer extends Viewport {
     static getConfig() {return {
+        /**
+         * @member {String} className='SharedCovid.view.MainContainer'
+         * @protected
+         */
         className: 'SharedCovid.view.MainContainer',
-        ntype    : 'main-container',
-
+        /**
+         * @member {Boolean} autoMount=true
+         */
         autoMount: true,
-        layout   : {ntype: 'fit'},
-
-        items: [{
-            module: TabContainer,
-            height: 300,
-            width : 500,
-            style : {flex: 'none', margin: '20px'},
-
-            itemDefaults: {
-                module: Component,
-                cls   : ['neo-examples-tab-component'],
-                style : {padding: '20px'},
-            },
+        /**
+         * @member {Array} cls=['covid-viewport', 'neo-viewport']
+         */
+        cls: ['covid-viewport', 'neo-viewport'],
+        /**
+         * @member {Neo.controller.Component} controller=MainContainerController
+         */
+        controller: MainContainerController,
+        /**
+         * @member {Array} items
+         */
+        items: [HeaderContainer, {
+            module   : TabContainer,
+            flex     : 1,
+            reference: 'tab-container',
+            style    : {margin: '10px', marginTop: 0},
 
             items: [{
+                module         : TableContainer,
+                reference      : 'table-container',
                 tabButtonConfig: {
-                    iconCls: 'fa fa-home',
-                    text   : 'Tab 1'
-                },
-                vdom: {innerHTML: 'Welcome to your new Neo App.'}
+                    iconCls: 'fa fa-table',
+                    route  : 'mainview=table',
+                    text   : 'Table'
+                }
             }, {
+                module         : MapboxGlContainer,
                 tabButtonConfig: {
-                    iconCls: 'fa fa-play-circle',
-                    text   : 'Tab 2'
-                },
-                vdom: {innerHTML: 'Have fun creating something awesome!'}
+                    iconCls: 'fa fa-globe-americas',
+                    route  : 'mainview=mapboxglmap',
+                    text   : 'Mapbox GL Map'
+                }
+            }, {
+                module         : WorldMapContainer,
+                tabButtonConfig: {
+                    iconCls: 'fa fa-globe-americas',
+                    route  : 'mainview=worldmap',
+                    text   : 'World Map'
+                }
+            }, {
+                module         : GalleryContainer,
+                tabButtonConfig: {
+                    iconCls: 'fa fa-images',
+                    route  : 'mainview=gallery',
+                    text   : 'Gallery'
+                }
+            }, {
+                module         : HelixContainer,
+                tabButtonConfig: {
+                    iconCls: 'fa fa-dna',
+                    route  : 'mainview=helix',
+                    text   : 'Helix'
+                }
+            }, {
+                module         : AttributionComponent,
+                reference      : 'attribution',
+                tabButtonConfig: {
+                    iconCls: 'fa fa-copyright',
+                    route  : 'mainview=attribution',
+                    text   : 'Attribution'
+                }
             }]
-        }]
+        }, FooterContainer],
+        /**
+         * @member {Object} layout={ntype: 'vbox', align: 'stretch'}
+         */
+        layout: {ntype: 'vbox', align: 'stretch'}
     }}
 }
 
