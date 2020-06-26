@@ -10,16 +10,17 @@
         Neo = self.Neo || {}; Neo.config = Neo.config || {};
 
         Object.assign(Neo.config, {
-            appPath         : 'apps/sharedcovidchart/app.mjs',
+            appPath         : '../../apps/sharedcovidchart/app.mjs',
             basePath        : '../../',
             environment     : 'development',
             isExperimental  : true,
             mainThreadAddons: ['AmCharts', 'Stylesheet'],
             themes          : ['neo-theme-dark', 'neo-theme-light'],
-            useSharedWorkers: true
+            useSharedWorkers: true,
+            workerBasePath  : '../../node_modules/neo.mjs/src/worker/'
         });
     </script>
 
-    <script src="../../src/Main.mjs" type="module"></script>
+    <script src="../../node_modules/neo.mjs/src/Main.mjs" type="module"></script>
 </body>
 </html>
