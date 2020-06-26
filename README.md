@@ -9,3 +9,6 @@ Desktop only.</br>
 </br>
 Demo Video on YouTube:</br>
 <a href="https://youtu.be/n7m7ZT1kXQk"><img src="https://raw.githubusercontent.com/neomjs/pages/master/resources/images/expanding_spa_vid.png"></a></br>
+
+## The App is based on the neo.mjs framework:
+https://github.com/neomjs/neo
