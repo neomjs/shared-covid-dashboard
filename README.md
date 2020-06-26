@@ -12,3 +12,8 @@ Demo Video on YouTube:</br>
 
 ## The App is based on the neo.mjs framework:
 https://github.com/neomjs/neo
+
+Build with :heart: in Germany.
+
+<br><br>
+Copyright (c) 2020 - today, <a href="https://www.linkedin.com/in/tobiasuhlig/">Tobias Uhlig</a>
