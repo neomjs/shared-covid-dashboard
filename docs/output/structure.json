@@ -100,6 +100,17 @@
     {
         "className": null,
         "collapsed": false,
+        "id": 201,
+        "isLeaf": false,
+        "name": "country",
+        "path": ".view",
+        "parentId": 199,
+        "singleton": false,
+        "srcPath": null
+    },
+    {
+        "className": null,
+        "collapsed": false,
         "id": 36,
         "isLeaf": false,
         "name": "data",
@@ -232,6 +243,17 @@
     {
         "className": null,
         "collapsed": false,
+        "id": 215,
+        "isLeaf": false,
+        "name": "mapboxGl",
+        "path": ".view",
+        "parentId": 199,
+        "singleton": false,
+        "srcPath": null
+    },
+    {
+        "className": null,
+        "collapsed": false,
         "id": 108,
         "isLeaf": false,
         "name": "mixin",
@@ -254,6 +276,17 @@
     {
         "className": null,
         "collapsed": false,
+        "id": 192,
+        "isLeaf": false,
+        "name": "model",
+        "path": "",
+        "parentId": 191,
+        "singleton": false,
+        "srcPath": null
+    },
+    {
+        "className": null,
+        "collapsed": false,
         "id": 119,
         "isLeaf": false,
         "name": "selection",
@@ -270,6 +303,17 @@
         "path": "",
         "parentId": null,
         "singleton": false
+    },
+    {
+        "className": null,
+        "collapsed": false,
+        "id": 195,
+        "isLeaf": false,
+        "name": "store",
+        "path": "",
+        "parentId": 191,
+        "singleton": false,
+        "srcPath": null
     },
     {
         "className": null,
@@ -362,7 +406,7 @@
     {
         "className": null,
         "collapsed": false,
-        "id": 192,
+        "id": 199,
         "isLeaf": false,
         "name": "view",
         "path": "",
@@ -468,6 +512,17 @@
         "parentId": 147,
         "singleton": false,
         "srcPath": "node_modules/neo.mjs/src/util/Array.mjs"
+    },
+    {
+        "className": "SharedCovid.view.AttributionComponent",
+        "collapsed": false,
+        "id": 200,
+        "isLeaf": true,
+        "name": "AttributionComponent",
+        "path": ".view",
+        "parentId": 199,
+        "singleton": false,
+        "srcPath": "apps/sharedcovid/view/AttributionComponent.mjs"
     },
     {
         "className": "Neo.collection.Base",
@@ -833,6 +888,17 @@
         "srcPath": "node_modules/neo.mjs/src/manager/Component.mjs"
     },
     {
+        "className": "SharedCovid.view.mapboxGl.Component",
+        "collapsed": false,
+        "id": 216,
+        "isLeaf": true,
+        "name": "Component",
+        "path": ".view.mapboxGl",
+        "parentId": 215,
+        "singleton": false,
+        "srcPath": "apps/sharedcovid/view/mapboxGl/Component.mjs"
+    },
+    {
         "className": "Neo.form.Container",
         "collapsed": false,
         "id": 50,
@@ -877,6 +943,28 @@
         "srcPath": "node_modules/neo.mjs/src/table/Container.mjs"
     },
     {
+        "className": "SharedCovid.view.mapboxGl.Container",
+        "collapsed": false,
+        "id": 217,
+        "isLeaf": true,
+        "name": "Container",
+        "path": ".view.mapboxGl",
+        "parentId": 215,
+        "singleton": false,
+        "srcPath": "apps/sharedcovid/view/mapboxGl/Container.mjs"
+    },
+    {
+        "className": "SharedCovid.view.mapboxGl.ContainerController",
+        "collapsed": false,
+        "id": 218,
+        "isLeaf": true,
+        "name": "ContainerController",
+        "path": ".view.mapboxGl",
+        "parentId": 215,
+        "singleton": false,
+        "srcPath": "apps/sharedcovid/view/mapboxGl/ContainerController.mjs"
+    },
+    {
         "className": "Docs.app.view.ContentTabContainer",
         "collapsed": false,
         "id": 185,
@@ -897,6 +985,28 @@
         "parentId": 67,
         "singleton": false,
         "srcPath": "node_modules/neo.mjs/src/form/field/trigger/CopyToClipboard.mjs"
+    },
+    {
+        "className": "SharedCovid.store.Countries",
+        "collapsed": false,
+        "id": 196,
+        "isLeaf": true,
+        "name": "Countries",
+        "path": ".store",
+        "parentId": 195,
+        "singleton": false,
+        "srcPath": "apps/sharedcovid/store/Countries.mjs"
+    },
+    {
+        "className": "SharedCovid.model.Country",
+        "collapsed": false,
+        "id": 193,
+        "isLeaf": true,
+        "name": "Country",
+        "path": ".model",
+        "parentId": 192,
+        "singleton": false,
+        "srcPath": "apps/sharedcovid/model/Country.mjs"
     },
     {
         "className": "Neo.util.Css",
@@ -1152,6 +1262,17 @@
         "srcPath": "node_modules/neo.mjs/src/manager/Focus.mjs"
     },
     {
+        "className": "SharedCovid.view.FooterContainer",
+        "collapsed": false,
+        "id": 207,
+        "isLeaf": true,
+        "name": "FooterContainer",
+        "path": ".view",
+        "parentId": 199,
+        "singleton": false,
+        "srcPath": "apps/sharedcovid/view/FooterContainer.mjs"
+    },
+    {
         "className": "Neo.util.Function",
         "collapsed": false,
         "id": 153,
@@ -1172,6 +1293,39 @@
         "parentId": 7,
         "singleton": false,
         "srcPath": "node_modules/neo.mjs/src/component/Gallery.mjs"
+    },
+    {
+        "className": "SharedCovid.view.country.Gallery",
+        "collapsed": false,
+        "id": 202,
+        "isLeaf": true,
+        "name": "Gallery",
+        "path": ".view.country",
+        "parentId": 201,
+        "singleton": false,
+        "srcPath": "apps/sharedcovid/view/country/Gallery.mjs"
+    },
+    {
+        "className": "SharedCovid.view.GalleryContainer",
+        "collapsed": false,
+        "id": 208,
+        "isLeaf": true,
+        "name": "GalleryContainer",
+        "path": ".view",
+        "parentId": 199,
+        "singleton": false,
+        "srcPath": "apps/sharedcovid/view/GalleryContainer.mjs"
+    },
+    {
+        "className": "SharedCovid.view.GalleryContainerController",
+        "collapsed": false,
+        "id": 209,
+        "isLeaf": true,
+        "name": "GalleryContainerController",
+        "path": ".view",
+        "parentId": 199,
+        "singleton": false,
+        "srcPath": "apps/sharedcovid/view/GalleryContainerController.mjs"
     },
     {
         "className": "Neo.selection.GalleryModel",
@@ -1229,6 +1383,17 @@
         "srcPath": "docs/app/view/HeaderContainer.mjs"
     },
     {
+        "className": "SharedCovid.view.HeaderContainer",
+        "collapsed": false,
+        "id": 210,
+        "isLeaf": true,
+        "name": "HeaderContainer",
+        "path": ".view",
+        "parentId": 199,
+        "singleton": false,
+        "srcPath": "apps/sharedcovid/view/HeaderContainer.mjs"
+    },
+    {
         "className": "Neo.component.Helix",
         "collapsed": false,
         "id": 15,
@@ -1238,6 +1403,39 @@
         "parentId": 7,
         "singleton": false,
         "srcPath": "node_modules/neo.mjs/src/component/Helix.mjs"
+    },
+    {
+        "className": "SharedCovid.view.country.Helix",
+        "collapsed": false,
+        "id": 203,
+        "isLeaf": true,
+        "name": "Helix",
+        "path": ".view.country",
+        "parentId": 201,
+        "singleton": false,
+        "srcPath": "apps/sharedcovid/view/country/Helix.mjs"
+    },
+    {
+        "className": "SharedCovid.view.HelixContainer",
+        "collapsed": false,
+        "id": 211,
+        "isLeaf": true,
+        "name": "HelixContainer",
+        "path": ".view",
+        "parentId": 199,
+        "singleton": false,
+        "srcPath": "apps/sharedcovid/view/HelixContainer.mjs"
+    },
+    {
+        "className": "SharedCovid.view.HelixContainerController",
+        "collapsed": false,
+        "id": 212,
+        "isLeaf": true,
+        "name": "HelixContainerController",
+        "path": ".view",
+        "parentId": 199,
+        "singleton": false,
+        "srcPath": "apps/sharedcovid/view/HelixContainerController.mjs"
     },
     {
         "className": "Neo.selection.HelixModel",
@@ -1282,6 +1480,39 @@
         "parentId": 97,
         "singleton": true,
         "srcPath": "node_modules/neo.mjs/src/main/addon/HighlightJS.mjs"
+    },
+    {
+        "className": "SharedCovid.model.HistoricalData",
+        "collapsed": false,
+        "id": 194,
+        "isLeaf": true,
+        "name": "HistoricalData",
+        "path": ".model",
+        "parentId": 192,
+        "singleton": false,
+        "srcPath": "apps/sharedcovid/model/HistoricalData.mjs"
+    },
+    {
+        "className": "SharedCovid.store.HistoricalData",
+        "collapsed": false,
+        "id": 197,
+        "isLeaf": true,
+        "name": "HistoricalData",
+        "path": ".store",
+        "parentId": 195,
+        "singleton": false,
+        "srcPath": "apps/sharedcovid/store/HistoricalData.mjs"
+    },
+    {
+        "className": "SharedCovid.view.country.HistoricalDataTable",
+        "collapsed": false,
+        "id": 204,
+        "isLeaf": true,
+        "name": "HistoricalDataTable",
+        "path": ".view.country",
+        "parentId": 201,
+        "singleton": false,
+        "srcPath": "apps/sharedcovid/view/country/HistoricalDataTable.mjs"
     },
     {
         "className": "Neo.core.IdGenerator",
@@ -1337,6 +1568,17 @@
         "parentId": 7,
         "singleton": false,
         "srcPath": "node_modules/neo.mjs/src/component/Label.mjs"
+    },
+    {
+        "className": "SharedCovid.view.country.LineChartComponent",
+        "collapsed": false,
+        "id": 205,
+        "isLeaf": true,
+        "name": "LineChartComponent",
+        "path": ".view.country",
+        "parentId": 201,
+        "singleton": false,
+        "srcPath": "apps/sharedcovid/view/country/LineChartComponent.mjs"
     },
     {
         "className": "Neo.selection.ListModel",
@@ -1407,11 +1649,11 @@
     {
         "className": "SharedCovid.view.MainContainer",
         "collapsed": false,
-        "id": 193,
+        "id": 213,
         "isLeaf": true,
         "name": "MainContainer",
         "path": ".view",
-        "parentId": 192,
+        "parentId": 199,
         "singleton": false,
         "srcPath": "apps/sharedcovid/view/MainContainer.mjs"
     },
@@ -1436,6 +1678,17 @@
         "parentId": 175,
         "singleton": false,
         "srcPath": "docs/app/view/MainContainerController.mjs"
+    },
+    {
+        "className": "SharedCovid.view.MainContainerController",
+        "collapsed": false,
+        "id": 214,
+        "isLeaf": true,
+        "name": "MainContainerController",
+        "path": ".view",
+        "parentId": 199,
+        "singleton": false,
+        "srcPath": "apps/sharedcovid/view/MainContainerController.mjs"
     },
     {
         "className": "Neo.worker.Manager",
@@ -1856,6 +2109,39 @@
         "srcPath": "node_modules/neo.mjs/src/main/addon/Stylesheet.mjs"
     },
     {
+        "className": "SharedCovid.view.country.Table",
+        "collapsed": false,
+        "id": 206,
+        "isLeaf": true,
+        "name": "Table",
+        "path": ".view.country",
+        "parentId": 201,
+        "singleton": false,
+        "srcPath": "apps/sharedcovid/view/country/Table.mjs"
+    },
+    {
+        "className": "SharedCovid.view.TableContainer",
+        "collapsed": false,
+        "id": 219,
+        "isLeaf": true,
+        "name": "TableContainer",
+        "path": ".view",
+        "parentId": 199,
+        "singleton": false,
+        "srcPath": "apps/sharedcovid/view/TableContainer.mjs"
+    },
+    {
+        "className": "SharedCovid.view.TableContainerController",
+        "collapsed": false,
+        "id": 220,
+        "isLeaf": true,
+        "name": "TableContainerController",
+        "path": ".view",
+        "parentId": 199,
+        "singleton": false,
+        "srcPath": "apps/sharedcovid/view/TableContainerController.mjs"
+    },
+    {
         "className": "Neo.form.field.Text",
         "collapsed": false,
         "id": 64,
@@ -1999,6 +2285,17 @@
         "srcPath": "node_modules/neo.mjs/src/core/Util.mjs"
     },
     {
+        "className": "SharedCovid.Util",
+        "collapsed": false,
+        "id": 198,
+        "isLeaf": true,
+        "name": "Util",
+        "path": "",
+        "parentId": 191,
+        "singleton": false,
+        "srcPath": "apps/sharedcovid/Util.mjs"
+    },
+    {
         "className": "Neo.layout.VBox",
         "collapsed": false,
         "id": 90,
@@ -2096,6 +2393,39 @@
         "parentId": 20,
         "singleton": false,
         "srcPath": "node_modules/neo.mjs/src/container/Window.mjs"
+    },
+    {
+        "className": "SharedCovid.view.WorldMapComponent",
+        "collapsed": false,
+        "id": 221,
+        "isLeaf": true,
+        "name": "WorldMapComponent",
+        "path": ".view",
+        "parentId": 199,
+        "singleton": false,
+        "srcPath": "apps/sharedcovid/view/WorldMapComponent.mjs"
+    },
+    {
+        "className": "SharedCovid.view.WorldMapContainer",
+        "collapsed": false,
+        "id": 222,
+        "isLeaf": true,
+        "name": "WorldMapContainer",
+        "path": ".view",
+        "parentId": 199,
+        "singleton": false,
+        "srcPath": "apps/sharedcovid/view/WorldMapContainer.mjs"
+    },
+    {
+        "className": "SharedCovid.view.WorldMapContainerController",
+        "collapsed": false,
+        "id": 223,
+        "isLeaf": true,
+        "name": "WorldMapContainerController",
+        "path": ".view",
+        "parentId": 199,
+        "singleton": false,
+        "srcPath": "apps/sharedcovid/view/WorldMapContainerController.mjs"
     },
     {
         "className": "Neo.data.connection.Xhr",
