@@ -1,5 +1,5 @@
-import {default as ComponentController} from '../../../node_modules/neo.mjs/src/controller/Component.mjs';
-import NeoArray                         from '../../../node_modules/neo.mjs/src/util/Array.mjs';
+import ComponentController from '../../../node_modules/neo.mjs/src/controller/Component.mjs';
+import NeoArray            from '../../../node_modules/neo.mjs/src/util/Array.mjs';
 
 /**
  * @class SharedCovid.view.TableContainerController
@@ -136,7 +136,7 @@ class TableContainerController extends ComponentController {
      *
      * @param {Object} record
      * @protected
-     * @return {Object}
+     * @returns {Object}
      */
     static assignFieldsOrNull(record) {
         return {
@@ -222,7 +222,7 @@ class TableContainerController extends ComponentController {
         }
 
         Neo.main.addon.AmCharts.setProperties({
-            appName   : this.view.appName,
+            appName   : logCheckbox.appName,
             id        : chartId,
             properties: {
                 'series.values.0.dataFields.valueY' : value ? 'dailyActive'    : 'active',

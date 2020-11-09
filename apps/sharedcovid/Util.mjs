@@ -2,7 +2,7 @@ import Base from '../../node_modules/neo.mjs/src/core/Base.mjs';
 
 /**
  * Static utility class
- * @class SharedCovid.Util
+ * @class Covid.Util
  * @extends Neo.core.Base
  */
 class Util extends Base {
@@ -26,10 +26,10 @@ class Util extends Base {
 
     static getConfig() {return {
         /**
-         * @member {String} className='SharedCovid.Util'
+         * @member {String} className='Covid.Util'
          * @protected
          */
-        className: 'SharedCovid.Util'
+        className: 'Covid.Util'
     }}
 
     /**
@@ -102,6 +102,7 @@ class Util extends Base {
             'lao-people\'s-democratic-republic'    : 'laos',
             'libyan-arab-jamahiriya'               : 'libya',
             'macedonia'                            : 'republic-of-macedonia',
+            'marshall-islands'                     : 'marshall-island',
             'mayotte'                              : 'france', // ?
             'moldova,-republic-of'                 : 'moldova',
             'ms-zaandam'                           : 'netherlands', // cruise ship
@@ -125,7 +126,8 @@ class Util extends Base {
             'usa'                                  : 'united-states-of-america',
             'uzbekistan'                           : 'uzbekistn',
             'venezuela,-bolivarian-republic-of'    : 'venezuela',
-            'viet-nam'                             : 'vietnam'
+            'viet-nam'                             : 'vietnam',
+            'wallis-and-futuna'                    : 'france'
         };
 
         let imageName = name.toLowerCase().replace(Util.flagRegEx, '-');
@@ -135,7 +137,7 @@ class Util extends Base {
         if (Neo.config.isGitHubPages) {
             let path = '../../../../resources/images/flaticon/country_flags/png/' + imageName + '.png';
 
-            if (!Neo.config.isExperimental) {
+            if (Neo.config.environment !== 'development') {
                 path = '../../' + path;
             }
 

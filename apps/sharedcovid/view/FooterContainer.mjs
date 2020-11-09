@@ -1,4 +1,4 @@
-import {default as Container}   from '../../../node_modules/neo.mjs/src/container/Base.mjs';
+import Container from '../../../node_modules/neo.mjs/src/container/Base.mjs';
 
 /**
  * @class SharedCovid.view.FooterContainer

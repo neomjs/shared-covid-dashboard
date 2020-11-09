@@ -1,6 +1,6 @@
-import {default as ComponentController} from '../../../node_modules/neo.mjs/src/controller/Component.mjs';
-import NeoArray                         from '../../../node_modules/neo.mjs/src/util/Array.mjs';
-import Util                             from '../Util.mjs';
+import ComponentController from '../../../node_modules/neo.mjs/src/controller/Component.mjs';
+import NeoArray            from '../../../node_modules/neo.mjs/src/util/Array.mjs';
+import Util                from '../Util.mjs';
 
 /**
  * @class SharedCovid.view.MainContainerController
@@ -292,13 +292,18 @@ class MainContainerController extends ComponentController {
         console.log('onAppConnect', name);
 
         let me = this,
-            parentView, view;
+            parentView, style, toolbar, view;
 
         switch (name) {
             case 'SharedCovidChart':
                 view = me.getReference('controls-panel');
                 parentView = Neo.getComponent(view.parentId);
                 parentView.storeReferences();
+
+                toolbar = me.getReference('controls-panel-header');
+                style   = toolbar.style || {};
+                style.display = 'none';
+                toolbar.style = style;
                 break;
             case 'SharedCovidGallery':
                 view = me.getReference('gallery-container');
@@ -343,7 +348,7 @@ class MainContainerController extends ComponentController {
         let me         = this,
             parentView = me.getMainView(name),
             view       = parentView.items[0],
-            index;
+            index, style, toolbar;
 
         console.log('onAppDisconnect', name);
 
@@ -368,6 +373,11 @@ class MainContainerController extends ComponentController {
 
             switch (name) {
                 case 'SharedCovidChart':
+                    toolbar = me.getReference('controls-panel-header');
+                    style   = toolbar.style || {};
+                    style.display = null;
+                    toolbar.style = style;
+
                     me.getReference('table-container').add(view);
                     break;
                 case 'SharedCovidGallery':
@@ -547,8 +557,9 @@ class MainContainerController extends ComponentController {
             src  : 'https://buttons.github.io/buttons.js'
         });
 
-        me.getReference('gallery').on('select', me.updateCountryField, me);
-        me.getReference('helix')  .on('select', me.updateCountryField, me);
+        me.getReference('gallery')      .on('select', me.updateCountryField, me);
+        me.getReference('helix')        .on('select', me.updateCountryField, me);
+        me.getReference('tab-container').on('moveTo', me.onTabMove,          me);
 
         me.getReference('table').on({
             deselect: me.clearCountryField,
@@ -599,13 +610,13 @@ class MainContainerController extends ComponentController {
 
         if (button.text === 'Theme Light') {
             buttonText   = 'Theme Dark';
-            href         = '../dist/development/neo-theme-light-no-css4.css';
+            href         = '../dist/development/neo-theme-light-no-css-vars.css';
             iconCls      = 'fa fa-moon';
             mapViewStyle = mapView.mapboxStyleLight;
             theme        = 'neo-theme-light';
         } else {
             buttonText   = 'Theme Light';
-            href         = '../dist/development/neo-theme-dark-no-css4.css';
+            href         = '../dist/development/neo-theme-dark-no-css-vars.css';
             iconCls      = 'fa fa-sun';
             mapViewStyle = mapView.mapboxStyleDark;
             theme        = 'neo-theme-dark';
@@ -615,7 +626,7 @@ class MainContainerController extends ComponentController {
         logo.vdom = vdom;
 
 
-        if (Neo.config.useCss4) {
+        if (Neo.config.useCssVars) {
             [view.appName, ...me.connectedApps].forEach(appName => {
                 view = me.getMainView(appName);
 
@@ -651,6 +662,13 @@ class MainContainerController extends ComponentController {
         });
 
         mapView.mapboxStyle = mapViewStyle;
+    }
+
+    /**
+     * @param {Object} data
+     */
+    onTabMove(data) {
+        NeoArray.move(this.mainTabs, data.fromIndex, data.toIndex);
     }
 
     /**
