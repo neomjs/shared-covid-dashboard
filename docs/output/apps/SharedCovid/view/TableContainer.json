@@ -233,7 +233,7 @@
                 "columnno": 4,
                 "path": "/Users/Shared/github/neomjs/shared-covid-dashboard/apps/sharedcovid/view",
                 "code": {
-                    "id": "astnode100112497",
+                    "id": "astnode100112499",
                     "name": "TableContainer",
                     "type": "MethodDefinition",
                     "paramnames": [
@@ -275,7 +275,7 @@
                 "columnno": 4,
                 "path": "/Users/Shared/github/neomjs/shared-covid-dashboard/apps/sharedcovid/view",
                 "code": {
-                    "id": "astnode100112588",
+                    "id": "astnode100112590",
                     "name": "TableContainer#storeReferences",
                     "type": "MethodDefinition",
                     "paramnames": []

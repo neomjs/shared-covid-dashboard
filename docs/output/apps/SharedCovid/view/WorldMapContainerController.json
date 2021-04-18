@@ -108,7 +108,7 @@
                 "columnno": 4,
                 "path": "/Users/Shared/github/neomjs/shared-covid-dashboard/apps/sharedcovid/view",
                 "code": {
-                    "id": "astnode100113932",
+                    "id": "astnode100113934",
                     "name": "WorldMapContainerController#onHeatRuleFieldChange",
                     "type": "MethodDefinition",
                     "paramnames": [
@@ -151,7 +151,7 @@
                 "columnno": 4,
                 "path": "/Users/Shared/github/neomjs/shared-covid-dashboard/apps/sharedcovid/view",
                 "code": {
-                    "id": "astnode100113967",
+                    "id": "astnode100113969",
                     "name": "WorldMapContainerController#onSeriesButtonClick",
                     "type": "MethodDefinition",
                     "paramnames": [

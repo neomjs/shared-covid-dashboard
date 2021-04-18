@@ -227,7 +227,7 @@
                 "columnno": 4,
                 "path": "/Users/Shared/github/neomjs/shared-covid-dashboard/apps/sharedcovid/view",
                 "code": {
-                    "id": "astnode100113621",
+                    "id": "astnode100113623",
                     "name": "WorldMapComponent#loadData",
                     "type": "MethodDefinition",
                     "paramnames": [

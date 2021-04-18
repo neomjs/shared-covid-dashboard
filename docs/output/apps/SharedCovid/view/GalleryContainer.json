@@ -233,7 +233,7 @@
                 "columnno": 4,
                 "path": "/Users/Shared/github/neomjs/shared-covid-dashboard/apps/sharedcovid/view",
                 "code": {
-                    "id": "astnode100107493",
+                    "id": "astnode100107495",
                     "name": "GalleryContainer",
                     "type": "MethodDefinition",
                     "paramnames": [
@@ -275,7 +275,7 @@
                 "columnno": 4,
                 "path": "/Users/Shared/github/neomjs/shared-covid-dashboard/apps/sharedcovid/view",
                 "code": {
-                    "id": "astnode100107540",
+                    "id": "astnode100107542",
                     "name": "GalleryContainer#destroy",
                     "type": "MethodDefinition",
                     "paramnames": [

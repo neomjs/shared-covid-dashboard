@@ -84,7 +84,7 @@
                 "columnno": 4,
                 "path": "/Users/Shared/github/neomjs/shared-covid-dashboard/apps/sharedcovid/view/mapboxGl",
                 "code": {
-                    "id": "astnode100112179",
+                    "id": "astnode100112181",
                     "name": "ContainerController#changeLayerVisibility",
                     "type": "MethodDefinition",
                     "paramnames": [
@@ -136,7 +136,7 @@
                 "columnno": 4,
                 "path": "/Users/Shared/github/neomjs/shared-covid-dashboard/apps/sharedcovid/view/mapboxGl",
                 "code": {
-                    "id": "astnode100112201",
+                    "id": "astnode100112203",
                     "name": "ContainerController#onDetailCirclesChange",
                     "type": "MethodDefinition",
                     "paramnames": [
@@ -179,7 +179,7 @@
                 "columnno": 4,
                 "path": "/Users/Shared/github/neomjs/shared-covid-dashboard/apps/sharedcovid/view/mapboxGl",
                 "code": {
-                    "id": "astnode100112229",
+                    "id": "astnode100112231",
                     "name": "ContainerController#onHeatMapChange",
                     "type": "MethodDefinition",
                     "paramnames": [
@@ -222,7 +222,7 @@
                 "columnno": 4,
                 "path": "/Users/Shared/github/neomjs/shared-covid-dashboard/apps/sharedcovid/view/mapboxGl",
                 "code": {
-                    "id": "astnode100112246",
+                    "id": "astnode100112248",
                     "name": "ContainerController#onTerrainChange",
                     "type": "MethodDefinition",
                     "paramnames": [
