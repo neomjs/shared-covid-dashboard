@@ -381,7 +381,7 @@
                 "columnno": 4,
                 "path": "/Users/Shared/github/neomjs/shared-covid-dashboard/apps/sharedcovid/view",
                 "code": {
-                    "id": "astnode100109162",
+                    "id": "astnode100109164",
                     "name": "MainContainerController#onConstructed",
                     "type": "MethodDefinition",
                     "paramnames": []
@@ -413,7 +413,7 @@
                 "columnno": 4,
                 "path": "/Users/Shared/github/neomjs/shared-covid-dashboard/apps/sharedcovid/view",
                 "code": {
-                    "id": "astnode100109254",
+                    "id": "astnode100109256",
                     "name": "MainContainerController#addStoreItems",
                     "type": "MethodDefinition",
                     "paramnames": [
@@ -456,7 +456,7 @@
                 "columnno": 4,
                 "path": "/Users/Shared/github/neomjs/shared-covid-dashboard/apps/sharedcovid/view",
                 "code": {
-                    "id": "astnode100109447",
+                    "id": "astnode100109449",
                     "name": "MainContainerController#applySummaryData",
                     "type": "MethodDefinition",
                     "paramnames": [
@@ -540,7 +540,7 @@
                 "columnno": 4,
                 "path": "/Users/Shared/github/neomjs/shared-covid-dashboard/apps/sharedcovid/view",
                 "code": {
-                    "id": "astnode100109615",
+                    "id": "astnode100109617",
                     "name": "MainContainerController#clearCountryField",
                     "type": "MethodDefinition",
                     "paramnames": [
@@ -583,7 +583,7 @@
                 "columnno": 4,
                 "path": "/Users/Shared/github/neomjs/shared-covid-dashboard/apps/sharedcovid/view",
                 "code": {
-                    "id": "astnode100109629",
+                    "id": "astnode100109631",
                     "name": "MainContainerController#createPopupWindow",
                     "type": "MethodDefinition",
                     "paramnames": [
@@ -644,7 +644,7 @@
                 "columnno": 4,
                 "path": "/Users/Shared/github/neomjs/shared-covid-dashboard/apps/sharedcovid/view",
                 "code": {
-                    "id": "astnode100109742",
+                    "id": "astnode100109744",
                     "name": "MainContainerController#getMainView",
                     "type": "MethodDefinition",
                     "paramnames": [
@@ -697,7 +697,7 @@
                 "columnno": 4,
                 "path": "/Users/Shared/github/neomjs/shared-covid-dashboard/apps/sharedcovid/view",
                 "code": {
-                    "id": "astnode100109767",
+                    "id": "astnode100109769",
                     "name": "MainContainerController#getTabIndex",
                     "type": "MethodDefinition",
                     "paramnames": [
@@ -757,7 +757,7 @@
                 "columnno": 4,
                 "path": "/Users/Shared/github/neomjs/shared-covid-dashboard/apps/sharedcovid/view",
                 "code": {
-                    "id": "astnode100109793",
+                    "id": "astnode100109795",
                     "name": "MainContainerController#getView",
                     "type": "MethodDefinition",
                     "paramnames": [
@@ -809,7 +809,7 @@
                 "columnno": 4,
                 "path": "/Users/Shared/github/neomjs/shared-covid-dashboard/apps/sharedcovid/view",
                 "code": {
-                    "id": "astnode100109808",
+                    "id": "astnode100109810",
                     "name": "MainContainerController#loadData",
                     "type": "MethodDefinition",
                     "paramnames": []
@@ -841,7 +841,7 @@
                 "columnno": 4,
                 "path": "/Users/Shared/github/neomjs/shared-covid-dashboard/apps/sharedcovid/view",
                 "code": {
-                    "id": "astnode100109856",
+                    "id": "astnode100109858",
                     "name": "MainContainerController#loadSummaryData",
                     "type": "MethodDefinition",
                     "paramnames": []
@@ -873,7 +873,7 @@
                 "columnno": 4,
                 "path": "/Users/Shared/github/neomjs/shared-covid-dashboard/apps/sharedcovid/view",
                 "code": {
-                    "id": "astnode100109921",
+                    "id": "astnode100109923",
                     "name": "MainContainerController#onAppConnect",
                     "type": "MethodDefinition",
                     "paramnames": [
@@ -924,7 +924,7 @@
                 "columnno": 4,
                 "path": "/Users/Shared/github/neomjs/shared-covid-dashboard/apps/sharedcovid/view",
                 "code": {
-                    "id": "astnode100110198",
+                    "id": "astnode100110200",
                     "name": "MainContainerController#onAppDisconnect",
                     "type": "MethodDefinition",
                     "paramnames": [
@@ -975,7 +975,7 @@
                 "columnno": 4,
                 "path": "/Users/Shared/github/neomjs/shared-covid-dashboard/apps/sharedcovid/view",
                 "code": {
-                    "id": "astnode100110454",
+                    "id": "astnode100110456",
                     "name": "MainContainerController#onCountryFieldClear",
                     "type": "MethodDefinition",
                     "paramnames": []
@@ -1007,7 +1007,7 @@
                 "columnno": 4,
                 "path": "/Users/Shared/github/neomjs/shared-covid-dashboard/apps/sharedcovid/view",
                 "code": {
-                    "id": "astnode100110474",
+                    "id": "astnode100110476",
                     "name": "MainContainerController#onCountryFieldSelect",
                     "type": "MethodDefinition",
                     "paramnames": [
@@ -1043,14 +1043,14 @@
             "meta": {
                 "range": [
                     13094,
-                    17185
+                    17131
                 ],
                 "filename": "MainContainerController.mjs",
                 "lineno": 439,
                 "columnno": 4,
                 "path": "/Users/Shared/github/neomjs/shared-covid-dashboard/apps/sharedcovid/view",
                 "code": {
-                    "id": "astnode100110506",
+                    "id": "astnode100110508",
                     "name": "MainContainerController#onHashChange",
                     "type": "MethodDefinition",
                     "paramnames": [
@@ -1094,15 +1094,15 @@
             "comment": "/**\n     *\n     */",
             "meta": {
                 "range": [
-                    17214,
-                    17888
+                    17160,
+                    17834
                 ],
                 "filename": "MainContainerController.mjs",
-                "lineno": 535,
+                "lineno": 533,
                 "columnno": 4,
                 "path": "/Users/Shared/github/neomjs/shared-covid-dashboard/apps/sharedcovid/view",
                 "code": {
-                    "id": "astnode100110960",
+                    "id": "astnode100110955",
                     "name": "MainContainerController#onLoadSummaryDataFail",
                     "type": "MethodDefinition",
                     "paramnames": []
@@ -1126,15 +1126,15 @@
             "comment": "/**\n     *\n     */",
             "meta": {
                 "range": [
-                    17917,
-                    18541
+                    17863,
+                    18487
                 ],
                 "filename": "MainContainerController.mjs",
-                "lineno": 559,
+                "lineno": 557,
                 "columnno": 4,
                 "path": "/Users/Shared/github/neomjs/shared-covid-dashboard/apps/sharedcovid/view",
                 "code": {
-                    "id": "astnode100111019",
+                    "id": "astnode100111014",
                     "name": "MainContainerController#onMainViewMounted",
                     "type": "MethodDefinition",
                     "paramnames": []
@@ -1158,15 +1158,15 @@
             "comment": "/**\n     * @param {Object} data\n     */",
             "meta": {
                 "range": [
-                    18591,
-                    18685
+                    18537,
+                    18631
                 ],
                 "filename": "MainContainerController.mjs",
-                "lineno": 582,
+                "lineno": 580,
                 "columnno": 4,
                 "path": "/Users/Shared/github/neomjs/shared-covid-dashboard/apps/sharedcovid/view",
                 "code": {
-                    "id": "astnode100111105",
+                    "id": "astnode100111100",
                     "name": "MainContainerController#onReloadDataButtonClick",
                     "type": "MethodDefinition",
                     "paramnames": [
@@ -1201,15 +1201,15 @@
             "comment": "/**\n     * @param {Object} data\n     */",
             "meta": {
                 "range": [
-                    18735,
-                    19075
+                    18681,
+                    19021
                 ],
                 "filename": "MainContainerController.mjs",
-                "lineno": 590,
+                "lineno": 588,
                 "columnno": 4,
                 "path": "/Users/Shared/github/neomjs/shared-covid-dashboard/apps/sharedcovid/view",
                 "code": {
-                    "id": "astnode100111120",
+                    "id": "astnode100111115",
                     "name": "MainContainerController#onRemoveFooterButtonClick",
                     "type": "MethodDefinition",
                     "paramnames": [
@@ -1244,15 +1244,15 @@
             "comment": "/**\n     * @param {Object} data\n     */",
             "meta": {
                 "range": [
-                    19125,
-                    21551
+                    19071,
+                    21497
                 ],
                 "filename": "MainContainerController.mjs",
-                "lineno": 604,
+                "lineno": 602,
                 "columnno": 4,
                 "path": "/Users/Shared/github/neomjs/shared-covid-dashboard/apps/sharedcovid/view",
                 "code": {
-                    "id": "astnode100111168",
+                    "id": "astnode100111163",
                     "name": "MainContainerController#onSwitchThemeButtonClick",
                     "type": "MethodDefinition",
                     "paramnames": [
@@ -1287,15 +1287,15 @@
             "comment": "/**\n     * @param {Object} data\n     */",
             "meta": {
                 "range": [
-                    21601,
-                    21692
+                    21547,
+                    21638
                 ],
                 "filename": "MainContainerController.mjs",
-                "lineno": 678,
+                "lineno": 676,
                 "columnno": 4,
                 "path": "/Users/Shared/github/neomjs/shared-covid-dashboard/apps/sharedcovid/view",
                 "code": {
-                    "id": "astnode100111456",
+                    "id": "astnode100111451",
                     "name": "MainContainerController#onTabMove",
                     "type": "MethodDefinition",
                     "paramnames": [
@@ -1330,15 +1330,15 @@
             "comment": "/**\n     * @param {Object} data\n     */",
             "meta": {
                 "range": [
-                    21742,
-                    21878
+                    21688,
+                    21824
                 ],
                 "filename": "MainContainerController.mjs",
-                "lineno": 685,
+                "lineno": 683,
                 "columnno": 4,
                 "path": "/Users/Shared/github/neomjs/shared-covid-dashboard/apps/sharedcovid/view",
                 "code": {
-                    "id": "astnode100111475",
+                    "id": "astnode100111470",
                     "name": "MainContainerController#onWindowChartMaximizeButtonClick",
                     "type": "MethodDefinition",
                     "paramnames": [
@@ -1373,15 +1373,15 @@
             "comment": "/**\n     * @param {Object} data\n     */",
             "meta": {
                 "range": [
-                    21928,
-                    22073
+                    21874,
+                    22019
                 ],
                 "filename": "MainContainerController.mjs",
-                "lineno": 692,
+                "lineno": 690,
                 "columnno": 4,
                 "path": "/Users/Shared/github/neomjs/shared-covid-dashboard/apps/sharedcovid/view",
                 "code": {
-                    "id": "astnode100111488",
+                    "id": "astnode100111483",
                     "name": "MainContainerController#onWindowGalleryMaximizeButtonClick",
                     "type": "MethodDefinition",
                     "paramnames": [
@@ -1416,15 +1416,15 @@
             "comment": "/**\n     * @param {Object} data\n     */",
             "meta": {
                 "range": [
-                    22123,
-                    22260
+                    22069,
+                    22206
                 ],
                 "filename": "MainContainerController.mjs",
-                "lineno": 699,
+                "lineno": 697,
                 "columnno": 4,
                 "path": "/Users/Shared/github/neomjs/shared-covid-dashboard/apps/sharedcovid/view",
                 "code": {
-                    "id": "astnode100111501",
+                    "id": "astnode100111496",
                     "name": "MainContainerController#onWindowHelixMaximizeButtonClick",
                     "type": "MethodDefinition",
                     "paramnames": [
@@ -1459,15 +1459,15 @@
             "comment": "/**\n     * @param {Object} data\n     */",
             "meta": {
                 "range": [
-                    22310,
-                    22445
+                    22256,
+                    22391
                 ],
                 "filename": "MainContainerController.mjs",
-                "lineno": 706,
+                "lineno": 704,
                 "columnno": 4,
                 "path": "/Users/Shared/github/neomjs/shared-covid-dashboard/apps/sharedcovid/view",
                 "code": {
-                    "id": "astnode100111514",
+                    "id": "astnode100111509",
                     "name": "MainContainerController#onWindowMapMaximizeButtonClick",
                     "type": "MethodDefinition",
                     "paramnames": [
@@ -1502,15 +1502,15 @@
             "comment": "/**\n     *\n     * @param view\n     * @param record\n     */",
             "meta": {
                 "range": [
-                    22514,
-                    23377
+                    22460,
+                    23323
                 ],
                 "filename": "MainContainerController.mjs",
-                "lineno": 715,
+                "lineno": 713,
                 "columnno": 4,
                 "path": "/Users/Shared/github/neomjs/shared-covid-dashboard/apps/sharedcovid/view",
                 "code": {
-                    "id": "astnode100111527",
+                    "id": "astnode100111522",
                     "name": "MainContainerController.selectMapboxGlCountry",
                     "type": "MethodDefinition",
                     "paramnames": [
@@ -1544,15 +1544,15 @@
             "comment": "/**\n     *\n     * @param {Object} data\n     * @param {Object} data.record\n     */",
             "meta": {
                 "range": [
-                    23469,
-                    23583
+                    23415,
+                    23529
                 ],
                 "filename": "MainContainerController.mjs",
-                "lineno": 742,
+                "lineno": 740,
                 "columnno": 4,
                 "path": "/Users/Shared/github/neomjs/shared-covid-dashboard/apps/sharedcovid/view",
                 "code": {
-                    "id": "astnode100111625",
+                    "id": "astnode100111620",
                     "name": "MainContainerController#updateCountryField",
                     "type": "MethodDefinition",
                     "paramnames": [
