@@ -5,7 +5,7 @@
     "license": "MIT",
     "repository": {
         "type": "git",
-        "url": "https://github.com/neomjs/neo.git"
+        "url": "https://github.com/neomjs/shared-covid-dashboard.git"
     },
     "scripts": {
         "build-all": "node ./node_modules/neo.mjs/buildScripts/buildAll.js -n",
@@ -19,6 +19,13 @@
         "test": "echo \"Error: no test specified\" && exit 1"
     },
     "dependencies": {
-        "neo.mjs": "^1.5.17"
+        "neo.mjs": "^2.0.1"
+    },
+    "bugs": {
+        "url": "https://github.com/neomjs/shared-covid-dashboa/issues"
+    },
+    "funding": {
+        "type": "GitHub Sponsors",
+        "url": "https://github.com/sponsors/tobiu"
     }
 }

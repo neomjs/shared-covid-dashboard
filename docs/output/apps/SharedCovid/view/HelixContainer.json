@@ -19,7 +19,7 @@
             "scope": "static",
             "$longname": "SharedCovid.view.HelixContainer",
             "$kind": "class",
-            "id": 3291,
+            "id": 3288,
             "neoClassName": "SharedCovid.view.HelixContainer"
         },
         {
@@ -44,7 +44,7 @@
             "scope": "global",
             "$longname": "className",
             "$kind": "property",
-            "id": 3292,
+            "id": 3289,
             "neoClassName": "SharedCovid.view.HelixContainer"
         },
         {
@@ -68,7 +68,7 @@
             "scope": "global",
             "$longname": "autoMount",
             "$kind": "property",
-            "id": 3293,
+            "id": 3290,
             "neoClassName": "SharedCovid.view.HelixContainer"
         },
         {
@@ -93,7 +93,7 @@
             "scope": "global",
             "$longname": "cls",
             "$kind": "property",
-            "id": 3294,
+            "id": 3291,
             "neoClassName": "SharedCovid.view.HelixContainer"
         },
         {
@@ -118,7 +118,7 @@
             "scope": "global",
             "$longname": "controller",
             "$kind": "property",
-            "id": 3295,
+            "id": 3292,
             "neoClassName": "SharedCovid.view.HelixContainer"
         },
         {
@@ -143,7 +143,7 @@
             "scope": "global",
             "$longname": "helix",
             "$kind": "property",
-            "id": 3296,
+            "id": 3293,
             "neoClassName": "SharedCovid.view.HelixContainer"
         },
         {
@@ -168,7 +168,7 @@
             "scope": "global",
             "$longname": "helixConfig",
             "$kind": "property",
-            "id": 3297,
+            "id": 3294,
             "neoClassName": "SharedCovid.view.HelixContainer"
         },
         {
@@ -194,7 +194,7 @@
             "scope": "global",
             "$longname": "layout",
             "$kind": "property",
-            "id": 3298,
+            "id": 3295,
             "neoClassName": "SharedCovid.view.HelixContainer"
         },
         {
@@ -218,7 +218,7 @@
             "scope": "global",
             "$longname": "items",
             "$kind": "property",
-            "id": 3299,
+            "id": 3296,
             "neoClassName": "SharedCovid.view.HelixContainer"
         },
         {
@@ -233,7 +233,7 @@
                 "columnno": 4,
                 "path": "/Users/Shared/github/neomjs/shared-covid-dashboard/apps/sharedcovid/view",
                 "code": {
-                    "id": "astnode100108599",
+                    "id": "astnode100108446",
                     "name": "HelixContainer",
                     "type": "MethodDefinition",
                     "paramnames": [
@@ -260,7 +260,7 @@
             "scope": "global",
             "$longname": "HelixContainer",
             "$kind": "constructor",
-            "id": 3300,
+            "id": 3297,
             "neoClassName": "SharedCovid.view.HelixContainer"
         }
     ]
