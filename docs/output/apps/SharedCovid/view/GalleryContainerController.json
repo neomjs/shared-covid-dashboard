@@ -19,7 +19,7 @@
             "scope": "static",
             "$longname": "SharedCovid.view.GalleryContainerController",
             "$kind": "class",
-            "id": 3273,
+            "id": 3275,
             "neoClassName": "SharedCovid.view.GalleryContainerController"
         },
         {
@@ -44,7 +44,7 @@
             "scope": "global",
             "$longname": "className",
             "$kind": "property",
-            "id": 3274,
+            "id": 3276,
             "neoClassName": "SharedCovid.view.GalleryContainerController"
         },
         {
@@ -70,7 +70,7 @@
             "scope": "global",
             "$longname": "gallery_",
             "$kind": "property",
-            "id": 3275,
+            "id": 3277,
             "neoClassName": "SharedCovid.view.GalleryContainerController"
         },
         {
@@ -85,7 +85,7 @@
                 "columnno": 4,
                 "path": "/Users/Shared/github/neomjs/shared-covid-dashboard/apps/sharedcovid/view",
                 "code": {
-                    "id": "astnode100107440",
+                    "id": "astnode100107788",
                     "name": "GalleryContainerController#beforeGetGallery",
                     "type": "MethodDefinition",
                     "paramnames": [
@@ -116,7 +116,7 @@
             "scope": "instance",
             "$longname": "GalleryContainerController#beforeGetGallery",
             "$kind": "method",
-            "id": 3276,
+            "id": 3278,
             "neoClassName": "SharedCovid.view.GalleryContainerController"
         },
         {
@@ -131,7 +131,7 @@
                 "columnno": 4,
                 "path": "/Users/Shared/github/neomjs/shared-covid-dashboard/apps/sharedcovid/view",
                 "code": {
-                    "id": "astnode100107463",
+                    "id": "astnode100107811",
                     "name": "GalleryContainerController#onCollapseButtonClick",
                     "type": "MethodDefinition",
                     "paramnames": [
@@ -151,7 +151,7 @@
             "params": [],
             "$longname": "GalleryContainerController#onCollapseButtonClick",
             "$kind": "method",
-            "id": 3277,
+            "id": 3279,
             "neoClassName": "SharedCovid.view.GalleryContainerController"
         },
         {
@@ -166,7 +166,7 @@
                 "columnno": 4,
                 "path": "/Users/Shared/github/neomjs/shared-covid-dashboard/apps/sharedcovid/view",
                 "code": {
-                    "id": "astnode100107503",
+                    "id": "astnode100107851",
                     "name": "GalleryContainerController#onOrderButtonClick",
                     "type": "MethodDefinition",
                     "paramnames": [
@@ -194,7 +194,7 @@
             "scope": "instance",
             "$longname": "GalleryContainerController#onOrderButtonClick",
             "$kind": "method",
-            "id": 3278,
+            "id": 3280,
             "neoClassName": "SharedCovid.view.GalleryContainerController"
         },
         {
@@ -209,7 +209,7 @@
                 "columnno": 4,
                 "path": "/Users/Shared/github/neomjs/shared-covid-dashboard/apps/sharedcovid/view",
                 "code": {
-                    "id": "astnode100107539",
+                    "id": "astnode100107887",
                     "name": "GalleryContainerController#onRangefieldChange",
                     "type": "MethodDefinition",
                     "paramnames": [
@@ -237,7 +237,7 @@
             "scope": "instance",
             "$longname": "GalleryContainerController#onRangefieldChange",
             "$kind": "method",
-            "id": 3279,
+            "id": 3281,
             "neoClassName": "SharedCovid.view.GalleryContainerController"
         },
         {
@@ -252,7 +252,7 @@
                 "columnno": 4,
                 "path": "/Users/Shared/github/neomjs/shared-covid-dashboard/apps/sharedcovid/view",
                 "code": {
-                    "id": "astnode100107558",
+                    "id": "astnode100107906",
                     "name": "GalleryContainerController#onRangefieldMounted",
                     "type": "MethodDefinition",
                     "paramnames": [
@@ -280,7 +280,7 @@
             "scope": "instance",
             "$longname": "GalleryContainerController#onRangefieldMounted",
             "$kind": "method",
-            "id": 3280,
+            "id": 3282,
             "neoClassName": "SharedCovid.view.GalleryContainerController"
         },
         {
@@ -295,7 +295,7 @@
                 "columnno": 4,
                 "path": "/Users/Shared/github/neomjs/shared-covid-dashboard/apps/sharedcovid/view",
                 "code": {
-                    "id": "astnode100107614",
+                    "id": "astnode100107962",
                     "name": "GalleryContainerController#onSortButtonClick",
                     "type": "MethodDefinition",
                     "paramnames": [
@@ -323,7 +323,7 @@
             "scope": "instance",
             "$longname": "GalleryContainerController#onSortButtonClick",
             "$kind": "method",
-            "id": 3281,
+            "id": 3283,
             "neoClassName": "SharedCovid.view.GalleryContainerController"
         }
     ]

@@ -19,7 +19,7 @@
             "scope": "static",
             "$longname": "SharedCovid.store.HistoricalData",
             "$kind": "class",
-            "id": 3196,
+            "id": 3198,
             "neoClassName": "SharedCovid.store.HistoricalData"
         }
     ]

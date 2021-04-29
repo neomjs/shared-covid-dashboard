@@ -19,7 +19,7 @@
             "scope": "static",
             "$longname": "SharedCovid.view.HelixContainerController",
             "$kind": "class",
-            "id": 3298,
+            "id": 3300,
             "neoClassName": "SharedCovid.view.HelixContainerController"
         },
         {
@@ -44,7 +44,7 @@
             "scope": "global",
             "$longname": "className",
             "$kind": "property",
-            "id": 3299,
+            "id": 3301,
             "neoClassName": "SharedCovid.view.HelixContainerController"
         },
         {
@@ -70,7 +70,7 @@
             "scope": "global",
             "$longname": "helix_",
             "$kind": "property",
-            "id": 3300,
+            "id": 3302,
             "neoClassName": "SharedCovid.view.HelixContainerController"
         },
         {
@@ -85,7 +85,7 @@
                 "columnno": 4,
                 "path": "/Users/Shared/github/neomjs/shared-covid-dashboard/apps/sharedcovid/view",
                 "code": {
-                    "id": "astnode100108523",
+                    "id": "astnode100108871",
                     "name": "HelixContainerController#beforeGetHelix",
                     "type": "MethodDefinition",
                     "paramnames": [
@@ -116,7 +116,7 @@
             "scope": "instance",
             "$longname": "HelixContainerController#beforeGetHelix",
             "$kind": "method",
-            "id": 3301,
+            "id": 3303,
             "neoClassName": "SharedCovid.view.HelixContainerController"
         },
         {
@@ -131,7 +131,7 @@
                 "columnno": 4,
                 "path": "/Users/Shared/github/neomjs/shared-covid-dashboard/apps/sharedcovid/view",
                 "code": {
-                    "id": "astnode100108546",
+                    "id": "astnode100108894",
                     "name": "HelixContainerController#onCollapseButtonClick",
                     "type": "MethodDefinition",
                     "paramnames": [
@@ -151,7 +151,7 @@
             "params": [],
             "$longname": "HelixContainerController#onCollapseButtonClick",
             "$kind": "method",
-            "id": 3302,
+            "id": 3304,
             "neoClassName": "SharedCovid.view.HelixContainerController"
         },
         {
@@ -166,7 +166,7 @@
                 "columnno": 4,
                 "path": "/Users/Shared/github/neomjs/shared-covid-dashboard/apps/sharedcovid/view",
                 "code": {
-                    "id": "astnode100108586",
+                    "id": "astnode100108934",
                     "name": "HelixContainerController#onFlipItemsButtonClick",
                     "type": "MethodDefinition",
                     "paramnames": [
@@ -186,7 +186,7 @@
             "params": [],
             "$longname": "HelixContainerController#onFlipItemsButtonClick",
             "$kind": "method",
-            "id": 3303,
+            "id": 3305,
             "neoClassName": "SharedCovid.view.HelixContainerController"
         },
         {
@@ -201,7 +201,7 @@
                 "columnno": 4,
                 "path": "/Users/Shared/github/neomjs/shared-covid-dashboard/apps/sharedcovid/view",
                 "code": {
-                    "id": "astnode100108604",
+                    "id": "astnode100108952",
                     "name": "HelixContainerController#onFollowSelectionButtonClick",
                     "type": "MethodDefinition",
                     "paramnames": [
@@ -221,7 +221,7 @@
             "params": [],
             "$longname": "HelixContainerController#onFollowSelectionButtonClick",
             "$kind": "method",
-            "id": 3304,
+            "id": 3306,
             "neoClassName": "SharedCovid.view.HelixContainerController"
         },
         {
@@ -236,7 +236,7 @@
                 "columnno": 4,
                 "path": "/Users/Shared/github/neomjs/shared-covid-dashboard/apps/sharedcovid/view",
                 "code": {
-                    "id": "astnode100108651",
+                    "id": "astnode100108999",
                     "name": "HelixContainerController#onRangefieldChange",
                     "type": "MethodDefinition",
                     "paramnames": [
@@ -264,7 +264,7 @@
             "scope": "instance",
             "$longname": "HelixContainerController#onRangefieldChange",
             "$kind": "method",
-            "id": 3305,
+            "id": 3307,
             "neoClassName": "SharedCovid.view.HelixContainerController"
         },
         {
@@ -279,7 +279,7 @@
                 "columnno": 4,
                 "path": "/Users/Shared/github/neomjs/shared-covid-dashboard/apps/sharedcovid/view",
                 "code": {
-                    "id": "astnode100108690",
+                    "id": "astnode100109038",
                     "name": "HelixContainerController#onRangefieldMounted",
                     "type": "MethodDefinition",
                     "paramnames": [
@@ -307,7 +307,7 @@
             "scope": "instance",
             "$longname": "HelixContainerController#onRangefieldMounted",
             "$kind": "method",
-            "id": 3306,
+            "id": 3308,
             "neoClassName": "SharedCovid.view.HelixContainerController"
         },
         {
@@ -322,7 +322,7 @@
                 "columnno": 4,
                 "path": "/Users/Shared/github/neomjs/shared-covid-dashboard/apps/sharedcovid/view",
                 "code": {
-                    "id": "astnode100108740",
+                    "id": "astnode100109088",
                     "name": "HelixContainerController#onSortButtonClick",
                     "type": "MethodDefinition",
                     "paramnames": [
@@ -350,7 +350,7 @@
             "scope": "instance",
             "$longname": "HelixContainerController#onSortButtonClick",
             "$kind": "method",
-            "id": 3307,
+            "id": 3309,
             "neoClassName": "SharedCovid.view.HelixContainerController"
         }
     ]
