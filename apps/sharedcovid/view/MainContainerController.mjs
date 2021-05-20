@@ -133,7 +133,9 @@ class MainContainerController extends ComponentController {
         }
 
         if (['gallery', 'helix', 'table'].includes(reference)) {
-            activeTab.store.data = data;
+            if (activeTab) {
+                activeTab.store.data = data;
+            }
         }
 
         else if (reference === 'mapboxglmap') {
@@ -261,8 +263,8 @@ class MainContainerController extends ComponentController {
 
         fetch(me.apiUrl)
             .then(response => response.json())
-            .then(data => me.addStoreItems(data))
-            .catch(err => console.log('Can’t access ' + me.apiUrl, err));
+            .catch(err => console.log('Can’t access ' + me.apiUrl, err))
+            .then(data => me.addStoreItems(data));
     }
 
     /**
@@ -273,8 +275,8 @@ class MainContainerController extends ComponentController {
 
         fetch(me.apiSummaryUrl)
             .then(response => response.json())
-            .then(data => me.applySummaryData(data))
-            .catch(err => console.log('Can’t access ' + me.apiSummaryUrl, err));
+            .catch(err => console.log('Can’t access ' + me.apiSummaryUrl, err))
+            .then(data => me.applySummaryData(data));
 
         setTimeout(() => {
             if (!me.summaryData) {
@@ -434,11 +436,12 @@ class MainContainerController extends ComponentController {
     onHashChange(value, oldValue) {
         let me                = this,
             activeIndex       = me.getTabIndex(value.hash),
+            activeView        = me.getView(activeIndex),
             country           = value.hash && value.hash.country,
             countryField      = me.getReference('country-field'),
             tabContainer      = me.getReference('tab-container'),
-            activeView        = me.getView(activeIndex),
             delaySelection    = !me.data ? 1000 : tabContainer.activeIndex !== activeIndex ? 100 : 0,
+            listeners         = me.mainTabsListeners,
             id, ntype, selectionModel;
 
         if (me.firstHashChange || value.appNames) {
@@ -488,8 +491,8 @@ class MainContainerController extends ComponentController {
                     }
 
                     if (ntype === 'gallery' || me.connectedApps.includes('SharedCovidGallery')) {
-                        if (!me.mainTabsListeners.includes('gallery')) {
-                            me.mainTabsListeners.push('gallery');
+                        if (!listeners.includes('gallery')) {
+                            listeners.push('gallery');
                             me.galleryView = me.getReference('gallery');
                             me.galleryView.on('select', me.updateCountryField, me);
                         }
@@ -500,8 +503,8 @@ class MainContainerController extends ComponentController {
                     }
 
                     if (ntype === 'helix' || me.connectedApps.includes('SharedCovidHelix')) {
-                        if (!me.mainTabsListeners.includes('helix')) {
-                            me.mainTabsListeners.push('helix');
+                        if (!listeners.includes('helix')) {
+                            listeners.push('helix');
                             me.helixView = me.getReference('helix');
                             me.helixView.on('select', me.updateCountryField, me);
                         }
@@ -532,8 +535,8 @@ class MainContainerController extends ComponentController {
                     }
 
                     if (ntype === 'table-container') {
-                        if (!me.mainTabsListeners.includes('table')) {
-                            me.mainTabsListeners.push('table');
+                        if (!listeners.includes('table')) {
+                            listeners.push('table');
                             me.tableView = me.getReference('table')
 
                             me.tableView.on({
@@ -747,7 +750,7 @@ class MainContainerController extends ComponentController {
             layerId: 'ne-10m-admin-0-countries-4s7rvf',
             value  : map[record.countryInfo.iso3] || map['default']
         });
-        
+
         view.flyTo({
             lat: record.countryInfo.lat,
             lng: record.countryInfo.long
