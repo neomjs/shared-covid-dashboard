@@ -1,6 +1,6 @@
 {
     "name": "sharedcovid",
-    "version": "1.0.1",
+    "version": "1.0.2",
     "author": "Tobias Uhlig",
     "license": "MIT",
     "repository": {
@@ -19,7 +19,7 @@
         "test": "echo \"Error: no test specified\" && exit 1"
     },
     "dependencies": {
-        "neo.mjs": "^2.1.1"
+        "neo.mjs": "^2.1.5"
     },
     "bugs": {
         "url": "https://github.com/neomjs/shared-covid-dashboa/issues"
