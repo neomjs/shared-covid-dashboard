@@ -1,6 +1,6 @@
 {
     "name": "sharedcovid",
-    "version": "1.0.2",
+    "version": "1.0.3",
     "author": "Tobias Uhlig",
     "license": "MIT",
     "repository": {
@@ -13,13 +13,14 @@
         "build-my-apps": "node ./node_modules/neo.mjs/buildScripts/webpack/buildMyApps.js",
         "build-themes": "node ./node_modules/neo.mjs/buildScripts/webpack/buildThemes.js",
         "build-threads": "node ./node_modules/neo.mjs/buildScripts/webpack/buildThreads.js",
+        "copy-examples": "node ./buildScripts/copyExamples.js",
         "create-app": "node ./node_modules/neo.mjs/buildScripts/createApp.js",
         "generate-docs-json": "node ./node_modules/neo.mjs/buildScripts/docs/jsdocx.js",
         "server-start": "webpack serve -c ./node_modules/neo.mjs/buildScripts/webpack/webpack.server.config.js --open",
         "test": "echo \"Error: no test specified\" && exit 1"
     },
     "dependencies": {
-        "neo.mjs": "^2.1.5"
+        "neo.mjs": "^2.2.0"
     },
     "bugs": {
         "url": "https://github.com/neomjs/shared-covid-dashboa/issues"

@@ -1,5 +1,4 @@
 {
-    "bodyTag": "<body>",
     "mainInput": "./src/Main.mjs",
     "mainOutput": "main.js",
     "workers": {
@@ -12,52 +11,12 @@
             "output": "vdomworker.js"
         }
     },
-    "apps": {
-        "Docs": {
-            "input": "./docs/app.mjs",
-            "mainThreadAddons": "'DragDrop', 'HighlightJS', 'Stylesheet'",
-            "output": "/docs/",
-            "title": "Neo Docs"
-        },
-        "SharedCovid": {
-            "input": "./apps/sharedcovid/app.mjs",
-            "output": "/apps/sharedcovid/",
-            "themes": "'neo-theme-dark', 'neo-theme-light'",
-            "title": "SharedCovid",
-            "mainThreadAddons": "'AmCharts', 'DragDrop', 'MapboxGL', 'Stylesheet'",
-            "useSharedWorkers": true
-        },
-        "SharedCovidChart": {
-            "input": "./apps/sharedcovidchart/app.mjs",
-            "output": "/apps/sharedcovidchart/",
-            "themes": "'neo-theme-dark', 'neo-theme-light'",
-            "title": "SharedCovid Country Chart / Table",
-            "mainThreadAddons": "'AmCharts', 'Stylesheet'",
-            "useSharedWorkers": true
-        },
-        "SharedCovidGallery": {
-            "input": "./apps/sharedcovidgallery/app.mjs",
-            "output": "/apps/sharedcovidgallery/",
-            "themes": "'neo-theme-dark', 'neo-theme-light'",
-            "title": "SharedCovid CountryGallery",
-            "mainThreadAddons": "'Stylesheet'",
-            "useSharedWorkers": true
-        },
-        "SharedCovidHelix": {
-            "input": "./apps/sharedcovidhelix/app.mjs",
-            "output": "/apps/sharedcovidhelix/",
-            "themes": "'neo-theme-dark', 'neo-theme-light'",
-            "title": "SharedCovid CountryHelix",
-            "mainThreadAddons": "'Stylesheet'",
-            "useSharedWorkers": true
-        },
-        "SharedCovidMap": {
-            "input": "./apps/sharedcovidmap/app.mjs",
-            "output": "/apps/sharedcovidmap/",
-            "themes": "'neo-theme-dark', 'neo-theme-light'",
-            "title": "SharedCovid MapboxGL Map",
-            "mainThreadAddons": "'MapboxGL', 'Stylesheet'",
-            "useSharedWorkers": true
-        }
-    }
+    "apps": [
+        "Docs",
+        "SharedCovid",
+        "SharedCovidChart",
+        "SharedCovidGallery",
+        "SharedCovidHelix",
+        "SharedCovidMap"
+    ]
 }
