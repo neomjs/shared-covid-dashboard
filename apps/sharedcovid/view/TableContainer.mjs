@@ -23,9 +23,19 @@ class TableContainer extends Container {
          */
         autoMount: true,
         /**
+         * @member {Object} bind
+         */
+        bind: {
+            countryRecord: data => data.countryRecord
+        },
+        /**
          * @member {Neo.controller.Component|null} controller=TableContainerController
          */
         controller: TableContainerController,
+        /**
+         * @member {Object} countryRecord_=null
+         */
+        countryRecord_: null,
         /**
          * @member {Number} historyPanelWidth=520
          * @protected
@@ -136,11 +146,10 @@ class TableContainer extends Container {
     }}
 
     /**
-     *
      * @param {Object} config
      */
-    constructor(config) {
-        super(config);
+    construct(config) {
+        super.construct(config);
 
         const me = this;
 
@@ -153,18 +162,32 @@ class TableContainer extends Container {
                 text   : 'Table'
             },
 
-            ...me.historicalDataTableConfig || {}
+            ...me.historicalDataTableConfig
         });
 
         me.items[1].items[0].items.push(me.historicalDataTable);
 
         me.table = Neo.create({
             module   : Table,
+            appName  : me.appName,
+            parentId : me.id,
             reference: 'table',
-            ...me.tableConfig || {}
+            ...me.tableConfig
         });
 
         me.items[0].items.push(me.table);
+    }
+
+    /**
+     * Triggered after the countryRecord config got changed
+     * @param {String|null} value
+     * @param {String|null} oldValue
+     * @protected
+     */
+    afterSetCountryRecord(value, oldValue) {
+        setTimeout(() => {
+            this.controller.onCountryChange(value);
+        }, this.isConstructed ? 0 : 50);
     }
 
     /**

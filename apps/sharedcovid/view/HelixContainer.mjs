@@ -244,18 +244,24 @@ class HelixContainer extends Container {
     }}
 
     /**
-     *
      * @param {Object} config
      */
-    constructor(config) {
-        super(config);
+    construct(config) {
+        super.construct(config);
 
-        const me = this;
+        let me = this;
 
         me.helix = Neo.create({
             module   : Helix,
+            appName  : me.appName,
+            parentId : me.id,
             reference: 'helix',
-            ...me.helixConfig || {}
+
+            model: {
+                parent: me.getModel()
+            },
+
+            ...me.helixConfig
         });
 
         me.items[0].items.push(me.helix);
